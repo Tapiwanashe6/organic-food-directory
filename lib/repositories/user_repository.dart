@@ -48,7 +48,6 @@ class UserRepository {
       try {
         await cred.user?.sendEmailVerification();
       } catch (e) {
-        print('⚠️ Email verification send failed: $e');
         // Continue even if verification email fails
       }
       
@@ -61,7 +60,6 @@ class UserRepository {
       await _firestore.collection('users').doc(cred.user!.uid).set(user.toMap());
       return user;
     } on FirebaseAuthException catch (e) {
-      print('❌ Firebase Auth Error [${e.code}]: ${e.message}');
       String errorMessage;
       switch (e.code) {
         case 'email-already-in-use':
@@ -78,7 +76,6 @@ class UserRepository {
       }
       throw Exception(errorMessage);
     } catch (e) {
-      print('❌ Sign up exception: $e');
       throw Exception('Sign up failed: $e');
     }
   }
@@ -110,7 +107,6 @@ class UserRepository {
       data['isEmailVerified'] = isVerified;
       return UserModel.fromMap(data);
     } on FirebaseAuthException catch (e) {
-      print('❌ Firebase Auth Error [${e.code}]: ${e.message}');
       // Provide user-friendly error messages
       String errorMessage;
       switch (e.code) {
@@ -134,7 +130,6 @@ class UserRepository {
       }
       throw Exception(errorMessage);
     } catch (e) {
-      print('❌ Login exception: $e');
       throw Exception('Login failed: $e');
     }
   }
@@ -181,7 +176,6 @@ class UserRepository {
       data['isEmailVerified'] = userCred.user?.emailVerified ?? true;
       return UserModel.fromMap(data);
     } catch (e) {
-      print('❌ Google sign in exception: $e');
       throw Exception('Google sign in failed: $e');
     }
   }

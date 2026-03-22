@@ -52,7 +52,6 @@ class _ProfilePageState extends State<ProfilePage> {
     } on Exception catch (e) {
       // Handle specific errors
       final errorString = e.toString();
-      print('DEBUG: Upload error: $errorString');
       
       String errorMessage = 'Failed to upload profile picture';
       if (errorString.contains('No image selected')) {
