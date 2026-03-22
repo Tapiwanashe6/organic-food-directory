@@ -84,8 +84,6 @@ class CloudinaryService {
       }
 
       return secureUrl;
-    } on TimeoutException catch (e) {
-      throw Exception('Upload timeout: Request took too long');
     } catch (e) {
       throw Exception('Upload failed: $e');
     }
