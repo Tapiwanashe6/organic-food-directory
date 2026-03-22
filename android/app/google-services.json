@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "885163617614",
+    "project_id": "organic-food-directory",
+    "storage_bucket": "organic-food-directory.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885163617614:android:88c736b48079414c46421f",
+        "android_client_info": {
+          "package_name": "com.example.organic_food_directory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885163617614-m6tfcjcr8nnqvkl53lkqla5hupso2crd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.organic_food_directory",
+            "certificate_hash": "176ca454a99764cecdc791289962162bce0722c9"
+          }
+        },
+        {
+          "client_id": "885163617614-dlc8fqdenhnh7rq01ca9qqcc8pj1pmst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhZDiPmbpB2UG9-rUe0N2-YCsvM0yffgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885163617614-dlc8fqdenhnh7rq01ca9qqcc8pj1pmst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
