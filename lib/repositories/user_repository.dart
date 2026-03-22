@@ -17,7 +17,7 @@ class UserRepository {
   GoogleSignIn _getGoogleSignIn() {
     if (!_googleSignInInitialized) {
       _googleSignIn = GoogleSignIn(
-        clientId: 'YOUR_WEB_CLIENT_ID.googleusercontent.com',
+        clientId: '885163617614-dlc8fqdenhnh7rq01ca9qqcc8pj1pmst.apps.googleusercontent.com',
       );
       _googleSignInInitialized = true;
     }
